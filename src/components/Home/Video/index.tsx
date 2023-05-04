@@ -1,9 +1,9 @@
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef, useState } from "react";
 
-import Cross from "public/Icons/Cross.svg"
-import Play from "public/Icons/Play.svg"
-import Pause from "public/Icons/Pause.svg"
+import Cross from "/public/Icons/Cross.svg"
+import Play from "/public/Icons/Play.svg"
+import Pause from "/public/Icons/Pause.svg"
 import Image from 'next/image'
 
 import { Video } from "@/pages/api/db/portfolio_items.json"
