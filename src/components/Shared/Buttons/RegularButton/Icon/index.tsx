@@ -1,4 +1,4 @@
-import Animation from "public/download.json";
+import Animation from "@/pages/api/Lottie/download.json";
 import { useLottie } from "lottie-react";
 
 const style = {

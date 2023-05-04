@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import Cross from "public/Icons/Cross.svg"
 import Search from "public/Icons/Search.svg"
 
-import Certificates from "@/pages/api/db/portfolio_items.json"
+import { Certificates } from "@/pages/api/db/portfolio_items.json"
 import useWindowWidth from "@/hooks/useWindowWidth";
 
 export default function Knowledge(){
-    const [ popup, setPopup ] = useState(null);
+    const [ popup, setPopup ] = useState<string | null>(null);
     const mobile = useWindowWidth() < 800 ? true : false;
 
     const variants = {

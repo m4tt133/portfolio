@@ -1,10 +1,9 @@
 import { useLottie } from "lottie-react";
-import Animation from "/public/download.json";
+import Animation from "@/pages/api/Lottie/download.json";
 
 const style = {
     height: 50,
     width: 50,
-    position: "absolute",
     right: 10
 };
 

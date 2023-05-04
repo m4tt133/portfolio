@@ -1,16 +1,38 @@
-import { backendURL } from "@/config";
 import Image from "next/image";
 import Icon from "/public/Icons/Link.svg"
 import TagItem from "../TagItem";
 import Link from "next/link";
 
-export default function PortfolioItem({ content }: ContentProps): React.ReactElement {
+interface TagsArray {
+    label: string
+}
+
+interface DescriptionsArray {
+    label: string
+    description: string
+}
+
+interface ObjectProps {
+    logo: string
+    tags: TagsArray[]
+    title?: string
+    descriptions: DescriptionsArray[]
+    cta: string
+    link: string
+    cover: string
+}
+
+interface Props {
+    content: ObjectProps
+}
+
+export default function PortfolioItem({ content }: Props): React.ReactElement {
     const { logo, tags, title, descriptions, cta, link, cover } = content;
     
     return(
         <div className="flex justify-between items-center text-[15px] lg:flex-col lg:gap-[30px] lg:col-span-1">
             <div className="w-full">
-                <Image alt={title} src={cover} width={500} height={370} className="portfolioCover" style={{ maxHeight: "370px", height: "100%", objectFit: "cover", borderRadius: "10px" }} />
+                <Image alt="" src={cover} width={500} height={370} className="portfolioCover" style={{ maxHeight: "370px", height: "100%", objectFit: "cover", borderRadius: "10px" }} />
             </div>
             <div className="min-w-max flex flex-col gap-[25px] w-full md:min-w-[100%] md:w-full lg:gap-3 lg:min-w-[100%]">
                 <Image src={logo} width={170} height={50} alt=""/>

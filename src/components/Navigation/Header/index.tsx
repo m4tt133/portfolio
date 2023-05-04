@@ -1,60 +1,28 @@
 import Image from "next/image";
-import Link from "next/link";
 import Logo from "public/Icons/Logo.svg";
 import LinkedIn from "public/Icons/LinkedIn.svg";
 import RegularButton from "@/components/Shared/Buttons/RegularButton";
 
-import { useEffect } from "react";
+import { useState } from "react";
 
 export default function Header(): React.ReactElement {
 
-    const linkVariant = {
-		visible: {
-			x: 0,
-		},
-		hidden: {
-			x: '-100%',
-		},
-	};
+    const [scrolled, setScrolled] = useState<boolean>(false)
 
-    const bgVariant = {
-		visible: {
-			x: 0,
-		},
-		hidden: {
-			x: '-100%',
-		},
-	};
-
-    useEffect(() => {
-        const debounce = (fn) => {
-
-            let frame;
-
-            return (...params) => {
-
-                if (frame) {
-                    cancelAnimationFrame(frame);
-                }
-
-                frame = requestAnimationFrame(() => {
-
-                    fn(...params);
-                });
-            }
-        };
-
-        const storeScroll = () => {
-            document.documentElement.dataset.scroll = window.scrollY;
+    const changeColor = () => {
+        if(window.scrollY >= 90){ 
+            setScrolled(true);
+        }else{
+            setScrolled(false)
         }
+    }
 
-        document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-
-        storeScroll();
-    })
+    if (typeof window !== "undefined") {
+        window.addEventListener('scroll', changeColor)
+    }
 
     return(
-        <header className="fixed top-0 w-full py-5 z-[999999] md:px-[20px] md:pt-7 header">
+        <header className={`fixed top-0 w-full py-5 z-[999999] md:px-[20px] md:pt-7 ${scrolled ? 'header' : ''}`}>
             <section className="w-full relative max-w-[1095px] m-auto flex justify-between ">
                 <div className="flex gap-10 items-center md:gap-4">
                     <Image src={Logo} width={150} height={100} alt=""/>
