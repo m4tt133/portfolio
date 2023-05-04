@@ -1,7 +1,7 @@
 import Heading from "@/components/Shared/Heading";
 import TagItem from "../Portfolio/TagItem";
 
-import { TechnologiesArray } from "@/pages/api/db/portfolio_items.json"
+import TechnologiesArray from "@/pages/api/db/portfolio_items.json"
 
 interface Props {
     label: string

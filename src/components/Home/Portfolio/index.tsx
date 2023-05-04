@@ -1,7 +1,8 @@
 import Heading from "@/components/Shared/Heading";
 import PortfolioItem from "./PortfolioItem";
 import Image from "next/image";
-import { PortfolioItems, Review }from "@/pages/api/db/portfolio_items.json"
+import PortfolioItems from "@/pages/api/db/portfolio_items.json"
+import Review from "@/pages/api/db/portfolio_items.json"
 
 interface Props {
     heading: object

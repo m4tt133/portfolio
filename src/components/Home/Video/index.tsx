@@ -1,12 +1,12 @@
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef, useState } from "react";
 
-import Cross from "public/Icons/Cross.svg"
-import Play from "public/Icons/Play.svg"
-import Pause from "public/Icons/Pause.svg"
+import Cross from "/public/Icons/Cross.svg"
+import Play from "/public/Icons/Play.svg"
+import Pause from "/public/Icons/Pause.svg"
 import Image from 'next/image'
 
-import { Video } from "@/pages/api/db/portfolio_items.json"
+import Video from "@/pages/api/db/portfolio_items.json"
 
 import useWindowWidth from "@/hooks/useWindowWidth"
 
@@ -81,12 +81,12 @@ export default function FixedVideo(): React.ReactElement {
                         </button>
                     </motion.div>
                     <span className="absolute left-0 w-full text-center top-[-45px] rounded p-2 px-4 text-xs text-white min-w-max font-normal shadow-md text-[white] bg-violet-light lg:hidden">
-                        <p className="z-[5] relative">⭐ Check My Client's Video Review! 🔽</p>
+                        <p className="z-[5] relative">⭐ Check My Client&aposs Video Review! 🔽</p>
                     </span>
                 </motion.div>
             }
             <button onClick={() => setShow(true)} className="fixed right-5 z-[999] hidden lg:block bottom-5 rounded bg-violet-light p-2 px-4 text-xs text-white min-w-max font-normal shadow-md text-[white] md:bg-violet-light">
-                <p className="z-[5] relative">⭐ Check My Client's Video Review!</p>
+                <p className="z-[5] relative">⭐ Check My Client&aposs Video Review!</p>
             </button>
         </>
     )

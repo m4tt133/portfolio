@@ -10,7 +10,7 @@ export default function PortfolioItem({ content }: ContentProps): React.ReactEle
     return(
         <div className="flex justify-between items-center text-[15px] lg:flex-col lg:gap-[30px] lg:col-span-1">
             <div className="w-full">
-                <Image src={cover} width={500} height={370} className="portfolioCover" style={{ maxHeight: "370px", height: "100%", objectFit: "cover", borderRadius: "10px" }} />
+                <Image alt={title} src={cover} width={500} height={370} className="portfolioCover" style={{ maxHeight: "370px", height: "100%", objectFit: "cover", borderRadius: "10px" }} />
             </div>
             <div className="min-w-max flex flex-col gap-[25px] w-full md:min-w-[100%] md:w-full lg:gap-3 lg:min-w-[100%]">
                 <Image src={logo} width={170} height={50} alt=""/>
@@ -33,7 +33,7 @@ export default function PortfolioItem({ content }: ContentProps): React.ReactEle
                 </div>
                 <Link href={link} target="_blank">
                     <button className="text-[white] font-bold flex gap-[15px] items-center text-[15px] lg:mt-5">
-                        {cta} <Image src={Icon} width={18} height={18} />
+                        {cta} <Image src={Icon} width={18} height={18} alt=""/>
                     </button>
                 </Link>
             </div>
