@@ -45,6 +45,29 @@
   margin-top: 10px;
 }
 
+.markdown strong {
+  font-weight: 900;
+}
+
+.markdown em {
+  font-weight: 900;
+}
+
+.markdown ul {
+  margin: 10px 0px;
+  list-style: disc;
+}
+
+.markdown ol {
+  margin: 10px 0px;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.markdown li {
+  font-weight: 900;
+}
+
 .technologies{
   grid-template-columns: 1fr auto;
 }
@@ -61,8 +84,52 @@
   .wrapper-padding-y{
     padding-inline: 20px;
   }
+
+  .markdown{
+    margin-top: 0px;
+  }
+
+  .portfolioCover{
+    max-height: 250px !important;
+  }
+
+  .buttonCta svg{
+    right: 15px !important;
+  }
 }
 
 .popup{
   /* transform: translate(-50%, -50%) !important; */
+}
+
+.marquee-custom-styles .marquee{
+  gap: 30px;
+  align-items: center;
+}
+
+html:not([data-scroll="0"]) .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  transition: 0.3s linear;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+@media(max-width: 767px){
+  .center-absolute.hero{
+    left: unset;
+    top: unset;
+    transform: unset;
+  }
+}
+
+.header{
+  padding-inline: 20px;
 }

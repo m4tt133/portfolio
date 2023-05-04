@@ -5,43 +5,19 @@ import Knowledge from '@/components/Home/Knowledge'
 import Portfolio from '@/components/Home/Portfolio'
 import Technologies from '@/components/Home/Technologies'
 import Header from '@/components/Navigation/Header'
-import { fetchAPI } from '@/lib/strapi'
-import { GetStaticProps } from 'next'
+import FixedVideo from '@/components/Home/Video'
 
-interface Props {
-  attributes: {
-    content: object
-  }
-} 
-
-interface Props {
-  response: Props
-}
-
-export default function Home({ response }: Props): React.ReactElement {
-  const { attributes: content } = response;
- 
+export default function Home(): React.ReactElement {
   return (
     <section className='overflow-hidden'>
-      <Header/>
-      <Hero content={content.Hero}/>
-      <About content={content.About}/>
-      <Portfolio content={content.Portfolio} />
-      <Knowledge content={content.Knowledge} />
-      <Technologies content={content.Technologies} />
-      <Contact content={content.Contact} />
+      <Header />
+      <Hero />
+      <About />
+      <Portfolio />
+      <Knowledge />
+      <Technologies />
+      <Contact />
+      <FixedVideo />
     </section>
   )
-}
-
-export const getStaticProps: GetStaticProps = async () => {
-  const response: object = await fetchAPI('/homepage?populate=deep');
-
-  const content = response.data;
-
-  return{
-    props: {
-      response: content
-    }
-  }
 }

@@ -12,6 +12,8 @@ module.exports = {
       'gray-dark': '#5C5C5C'
     },
     screens: {
+      xxl: { max: "1900px" },
+      xl: { min: "1095px" },
 			lg: { max: "1095px" },
 			md: { max: "767px" },
 			sm: { max: "639px" },

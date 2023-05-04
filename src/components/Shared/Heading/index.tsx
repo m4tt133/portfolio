@@ -1,21 +1,15 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-interface PropsContent {
-    heading: string,
-    subheading: string
-}
-
 interface Props {
-    content: PropsContent,
-    className: string
+    heading: string
+    subheading: string
+    className?: string
 }
 
-export default function Heading({ content, className }: Props): React.ReactElement {
-    const { heading, subheading } = content;
-
+export default function Heading({ subheading, heading, className }: Props): React.ReactElement {
     const ref = useRef(null);
-    const inView = useInView(ref);
+    const inView = useInView(ref, { once: true });
 
     return(
         <div className={`flex flex-col ${className}`} ref={ref}>

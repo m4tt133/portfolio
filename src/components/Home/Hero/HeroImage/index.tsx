@@ -1,24 +1,8 @@
 import Image from "next/image"
-import { backendURL } from "@/config"
+import MainImage from "/public/Images/Hero/main.png"
 
-interface Props {
-    image: {
-        data: {
-            attributes: {
-                url: string
-            }
-        }
-    }
-}
-
-interface ImageProps {
-    content: Props
-}
-
-export default function HeroImage({ content }: ImageProps): React.ReactElement{
-    const { url } = content.image.data.attributes;
-
+export default function HeroImage(){
     return(
-        <Image src={backendURL + url} width={410} height={490} alt=""/>
+        <Image src={MainImage} width={350} height={450} alt=""  className="md:max-h-[300px] md:w-full object-cover overflow-hidden rounded-xl"/>
     )
 }
