@@ -7,7 +7,7 @@ export default function Heading(): React.ReactElement{
     return(
         <div className="flex flex-col gap-[20px] text-[white] z-10">
             <motion.span initial={{ opacity: 0, y: '-20px' }} animate={{ opacity: 1, y: '0px' }} transition={{ delay: 0.2, duration: 0.3 }} className="flex gap-2">
-                Hi, I'm Mateusz <Image src={Emoji} width={20} height={20} alt=""/>
+                Hi, Im Mateusz <Image src={Emoji} width={20} height={20} alt=""/>
             </motion.span>
             <motion.h1 initial={{ opacity: 0, y: '-20px' }} animate={{ opacity: 1, y: '0px' }} transition={{ delay: 0.4, duration: 0.3 }} className="font-black text-[31px] max-w-[500px] md:max-w-none">
                 Design & Business Oriented Fullstack Developer.
