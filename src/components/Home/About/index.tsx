@@ -3,7 +3,7 @@ import Clients from "./Clients";
 
 export default function About(){
     return(
-        <section className="wrapper-padding-y flex flex-col gap-5 md:gap-5 text-[15px]">
+        <section className="wrapper-padding-y flex flex-col gap-5 md:gap-5 text-[14px]">
             <Heading subheading="About Me" heading="Introduction"/>
             <p className="font-semibold">I have always been an inquisitive and creative person. </p>
             <p>Throughout my professional journey, I have been on both sides, an employee and the boss. Both taught me some unique lessons on how things work in the IT industry. </p>

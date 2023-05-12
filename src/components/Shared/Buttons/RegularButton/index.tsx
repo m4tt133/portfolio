@@ -26,7 +26,7 @@ export default function RegularButton({ cta, onClick, icon, link, props }: Props
 
     return(
         <a href={link} {...props}>
-            <button className={`md:w-full relative buttonCta md:text-center bg-violet-light px-[25px] py-[11px] text-[15px] md:py-[15px] font-semibold rounded-[5px] flex gap-3 text-[white] items-center ${!icon ? "w-max md:w-full" : "w-[220px]"}`} onClick={onClick ? onClick : () => play()}>
+            <button className={`md:w-full relative buttonCta md:text-center bg-violet-light px-[25px] py-[11px] text-[14px] md:py-[15px] font-semibold rounded-[5px] flex gap-3 text-[white] items-center ${!icon ? "w-max md:w-full" : "w-[220px]"}`} onClick={onClick ? onClick : () => play()}>
                 {cta}
                 {icon === true ? 
                     <div className="absolute h-[50px] w-[50px] right-0">{View}</div> 

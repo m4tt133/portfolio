@@ -6,18 +6,80 @@ import Portfolio from '@/components/Home/Portfolio'
 import Technologies from '@/components/Home/Technologies'
 import Header from '@/components/Navigation/Header'
 import FixedVideo from '@/components/Home/Video'
+import Design from '@/components/Home/Design'
+import Head from 'next/head'
 
 export default function Home(): React.ReactElement {
   return (
-    <section className='overflow-hidden'>
-      <Header />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Knowledge />
-      <Technologies />
-      <Contact />
-      <FixedVideo />
-    </section>
+    <>
+      <Head>
+          <title>Mateusz Kąpała - Design & Business Focused Developer</title>
+          <meta
+              name="description"
+              content="A value-centric developer delivering results through code, design, and business expertise."
+              key="description"
+          />
+          <link
+              rel="canonical"
+              content="https://mkapala.pl"
+          />
+          <meta
+              property="og:type"
+              content="article"
+          />
+          <meta
+              property="og:url"
+              content="https://mkapala.pl"
+              key="og:url"
+          />
+          <meta
+              property="og:title"
+              content="Mateusz Kąpała - Design & Business Focused Developer"
+              key="og:title"
+          />
+          <meta
+              property="og:description"
+              content="A value-centric developer delivering results through code, design, and business expertise."
+              key="og:description"
+          />
+          <meta
+              property="og:image"
+              content="/public/Images/design-cover.png"
+              key="og:image"
+          />
+          <meta
+              name="twitter:title"
+              content="Mateusz Kąpała - Design & Business Focused Developer"
+          />
+          <meta
+              name="twitter:url"
+              content="https://mkapala.pl"
+          />
+          <meta
+              name="twitter:description"
+              content="A value-centric developer delivering results through code, design, and business expertise."
+          />
+          <meta
+              name="twitter:image"
+              content="/public/Images/design-cover.png"
+          />
+          <meta
+              name="twitter:card"
+              content="/public/Images/design-cover.png"
+              key="twitter:card"
+          />
+      </Head>
+      <section className='overflow-hidden'>
+        <Header />
+        <Hero />
+        <About />
+        <Portfolio />
+        <Design/>
+        <Technologies />
+        <Knowledge />
+        <Contact />
+        <FixedVideo />
+      </section>
+    </>
   )
 }

@@ -1,0 +1,154 @@
+{
+    "PortfolioItems": [
+        {
+            "cover": "/Images/Portfolio/gamegoods-cover.png",
+            "logo": "/Images/Portfolio/gamegoods-logo-white.svg",
+            "heading": "GameGoods - Headless eCommerce",
+            "tags": [
+                { "label": "Development" },
+                { "label": "Ecommerce" }
+            ],
+            "descriptions": [
+                { "label": "Industry", "description": "Gaming Accessories" },
+                { "label": "My Role", "description": "Consultancy, Fullstack Development, DevOps" },
+                { "label": "Technologies", "description": "Next.js, Node.js, Strapi, Swell, Klaviyo, Yotpo, VPS, Vercel" }
+            ],
+            "cta": "Open Live Website",
+            "link": "https://gamegoods.pl/"
+        },
+        {
+            "cover": "/Images/Portfolio/cinead-cover.png",
+            "logo": "/Images/Clients/cinead-logo-white.svg",
+            "heading": "Cinead - Marketing Website",
+            "tags": [
+                { "label": "Development" },
+                { "label": "UX/UI" },
+                { "label": "Marketing" }
+            ],
+            "descriptions": [
+                { "label": "Industry", "description": "Video Marketing for B2B" },
+                { "label": "My Role", "description": "Consultancy, Development, UX/UI, Integrations" },
+                { "label": "Technologies", "description": "Next.js, Strapi, GA, VPS, Nginx" }
+            ],
+            "cta": "Open Live Website",
+            "link": "https://cinead.pl/"
+        },
+        {
+            "cover": "/Images/Portfolio/yourkaya-cover.png",
+            "logo": "/Images/Clients/YourKaya - logowhite.svg",
+            "heading": "Your Kaya - Shopify PLUS eCommerce",
+            "tags": [
+                { "label": "Development" },
+                { "label": "Ecommerce" }
+            ],
+            "descriptions": [
+                { "label": "Industry", "description": "Women's Essentials" },
+                { "label": "My Role", "description": "Consultancy, Development, Integrations" },
+                { "label": "Technologies", "description": "Shopify, Javascript, JQuery, Liquid, ReCharge, Various Tools" }
+            ],
+            "cta": "Open Live Website",
+            "link": "https://yourkaya.pl/"
+        },
+        {
+            "cover": "/Images/Portfolio/nudyess-cover.png",
+            "logo": "/Images/Clients/nudyess-logo-white.svg",
+            "heading": "Nudyess - Shopify eCommerce",
+            "tags": [
+                { "label": "Development" },
+                { "label": "UX/UI" },
+                { "label": "Ecommerce" }
+            ],
+            "descriptions": [
+                { "label": "Industry", "description": "Women's Clothing" },
+                { "label": "My Role", "description": "Consultancy, Development, UX/UI, Integrations" },
+                { "label": "Technologies", "description": "Shopify, Javascript, JQuery, Liquid, Various Tools" }
+            ],
+            "cta": "Open Live Website",
+            "link": "https://nudyess.com/"
+        },
+        {
+            "cover": "/Images/Portfolio/nikalab-cover.png",
+            "logo": "/Images/Clients/nikalab-logo-white.svg",
+            "heading": "Nikalab - Shopify PLUS eCommerce",
+            "tags": [
+                { "label": "Development" },
+                { "label": "Ecommerce" }
+            ],
+            "descriptions": [
+                { "label": "Industry", "description": "Supplements" },
+                { "label": "My Role", "description": "Development, Integrations" },
+                { "label": "Technologies", "description": "Shopify, Javascript, JQuery, Liquid, Various Tools" }
+            ],
+            "cta": "Open Live Website",
+            "link": "https://nikalab.pl/"
+        }
+    ],
+    "Review": {
+        "image": "/Images/Hero/main.png",
+        "desc": "Ut ante netus massa ipsum mattis ipsum in. Non tellus a sit eu. Ultricies nunc ultricies tristique eu augue pretium mattis.",
+        "position": "John Doe, CEO Company",
+        "cta": "Video Review"
+    },
+    "Video": "/Videos/Portfolio/video.mp4",
+    "Certificates": [
+        { "image": "/Images/Certificates/certyfikat-machina.png" },
+        { "image": "/Images/Certificates/certyfikat-machina.png" }
+    ],
+    "TechnologiesArray": [
+        { 
+            "heading": "Frontend", 
+            "technologies": [
+                { "label": "Next.js" },
+                { "label": "React" },
+                { "label": "Javascript" },
+                { "label": "Typescript" },
+                { "label": "Rest | GraphQL" }
+            ] 
+        },
+        { 
+            "heading": "Backend", 
+            "technologies": [
+                { "label": "Node.js" },
+                { "label": "Express.js" },
+                { "label": "Typescript" }
+            ] 
+        },
+        { 
+            "heading": "ECommerce", 
+            "technologies": [
+                { "label": "Swell" },
+                { "label": "Shopify" }
+            ] 
+        },
+        { 
+            "heading": "CMS", 
+            "technologies": [
+                { "label": "Strapi" },
+                { "label": "Storyblok" },
+                { "label": "Sanity" },
+                { "label": "Wordpress" }
+            ] 
+        },
+        { 
+            "heading": "CSS", 
+            "technologies": [
+                { "label": "Tailwind" },
+                { "label": "SCSS" },
+                { "label": "Styled Components" }
+            ] 
+        },
+        { 
+            "heading": "UX/UI", 
+            "technologies": [
+                { "label": "Figma" }
+            ] 
+        },
+        { 
+            "heading": "Testing", 
+            "technologies": [
+                { "label": "Jest" },
+                { "label": "Cypress" }
+            ] 
+        }
+    ]
+}

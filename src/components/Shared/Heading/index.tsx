@@ -1,20 +1,15 @@
+import { IHeading } from "@/types/Shared/Heading/heading";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-interface Props {
-    heading: string
-    subheading: string
-    className?: string
-}
-
-export default function Heading({ subheading, heading, className }: Props): React.ReactElement {
+export default function Heading({ subheading, heading, className }: IHeading): React.ReactElement {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true });
 
     return(
         <div className={`flex flex-col ${className}`} ref={ref}>
             <span 
-                className="font-semibold text-[15px]" 
+                className="font-semibold text-[14px]" 
                 style={{
                     transform: inView ? "none" : "translateY(-20px)",
                     opacity: inView ? 1 : 0,
@@ -25,7 +20,7 @@ export default function Heading({ subheading, heading, className }: Props): Reac
                 {subheading}
             </span>
             <h1 
-                className="font-bold text-[35px]"
+                className="font-bold text-[35px] md:text-[27px]"
                 style={{
                     transform: inView ? "none" : "translateY(-20px)",
                     opacity: inView ? 1 : 0,

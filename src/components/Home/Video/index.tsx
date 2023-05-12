@@ -6,7 +6,7 @@ import Play from "/public/Icons/Play.svg"
 import Pause from "/public/Icons/Pause.svg"
 import Image from 'next/image'
 
-import { Video } from "@/pages/api/db/portfolio_items.json"
+import { Video } from "@/pages/api/db/db.json"
 
 import useWindowWidth from "@/hooks/useWindowWidth"
 
@@ -76,7 +76,7 @@ export default function FixedVideo(): React.ReactElement {
                         <button className="bg-black p-2 w-max rounded-full absolute top-5 right-5 hidden lg:block" onClick={() => setShow(null)}>
                             <Image src={Cross} width={25} height={25} alt=""/>
                         </button>
-                        <button className="bg-black p-3 w-[40px] h-[40px] rounded-full absolute bottom-5 left-5 flex items-center justify-center" onClick={playing ? handlePause : handlePlay }>
+                        <button className="bg-black p-3 w-[40px] h-[40px] rounded-full absolute top-5 left-5 flex items-center justify-center" onClick={playing ? handlePause : handlePlay }>
                             <Image src={playing ? Pause : Play} width={25} height={25} alt=""/>
                         </button>
                     </motion.div>

@@ -13,7 +13,7 @@ export default function Heading(): React.ReactElement{
                 Design & Business Oriented Fullstack Developer.
             </motion.h1>
             <div className="w-[100px] h-[1px] bg-gray-dark"></div>
-            <motion.p initial={{ opacity: 0, y: '-20px' }} animate={{ opacity: 1, y: '0px' }} transition={{ delay: 0.6, duration: 0.3 }} className="max-w-[450px] text-[15px] md:max-w-none">
+            <motion.p initial={{ opacity: 0, y: '-20px' }} animate={{ opacity: 1, y: '0px' }} transition={{ delay: 0.6, duration: 0.3 }} className="max-w-[450px] text-[14px] md:max-w-none">
                 A value-centric developer delivering results through code, design, and business expertise.
             </motion.p>
             <RegularButton cta={"Download My CV"} icon={true} props={{download: "CV - Mateusz Kąpała", className: "hidden md:block md:mt-5"}} link={'/cv.pdf'}/>
