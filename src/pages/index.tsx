@@ -44,7 +44,7 @@ export default function Home(): React.ReactElement {
           />
           <meta
               property="og:image"
-              content="/public/Images/design-cover.png"
+              content="https://mkapala.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdesign-cover.06e24270.png&w=1080&q=75"
               key="og:image"
           />
           <meta
@@ -61,11 +61,11 @@ export default function Home(): React.ReactElement {
           />
           <meta
               name="twitter:image"
-              content="/public/Images/design-cover.png"
+              content="https://mkapala.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdesign-cover.06e24270.png&w=1080&q=75"
           />
           <meta
               name="twitter:card"
-              content="/public/Images/design-cover.png"
+              content="https://mkapala.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdesign-cover.06e24270.png&w=1080&q=75"
               key="twitter:card"
           />
       </Head>
