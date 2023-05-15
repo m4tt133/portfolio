@@ -14,7 +14,7 @@ export default function Clients(){
         <section className="pt-[100px] flex flex-col w-full gap-[30px] md:pt-[45px]">
             <h3 className="font-bold text-[14px]">These Companies Trusted Me:</h3>
             <div className="justify-between items-center flex">
-                <Marquee className="marquee-custom-styles" gradientWidth={50} loop={1}>
+                <Marquee className="marquee-custom-styles" gradientWidth={50} loop={0}>
                     <Link href="https://gamegoods.pl/" target="_blank">
                         <Image src={Gamegoods} width={200} height={150} alt=""/>
                     </Link>

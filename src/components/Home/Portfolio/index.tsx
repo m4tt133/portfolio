@@ -8,7 +8,7 @@ export default function Portfolio(): React.ReactElement {
         <section className="flex flex-col">
             <div className="relative w-full h-full gradient py-[100px] gradient-top flex flex-col gap-[150px]">
                 <PortfolioItemsGrid content={PortfolioItems} />
-                <ClientReview content={Review} /> 
+                {/* <ClientReview content={Review} />  */}
             </div>
         </section>
     )

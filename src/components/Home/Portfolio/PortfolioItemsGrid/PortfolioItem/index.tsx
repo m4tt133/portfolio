@@ -13,7 +13,7 @@ export default function PortfolioItem({ content }: IPortfolioItem): React.ReactE
                 <Image alt="" src={cover} width={500} height={370} className="portfolioCover" style={{ maxHeight: "370px", height: "100%", objectFit: "cover", borderRadius: "10px" }} />
             </div>
             <div className="min-w-max flex flex-col gap-[25px] w-full md:min-w-[100%] md:w-full lg:gap-3 lg:min-w-[100%]">
-                <Image src={logo} width={170} height={50} alt=""/>
+                <Image src={logo} width={170} height={50} alt="" className="portfolioLogo"/>
                 <h2 className="font-semibold text-[19px] text-[white]">{heading}</h2>
                 <div className="flex gap-[10px]">
                     {tags.map(({ label }, index) => 

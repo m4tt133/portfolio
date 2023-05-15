@@ -10,7 +10,7 @@ export default function Heading(): React.ReactElement{
                 Hi, Im Mateusz <Image src={Emoji} width={20} height={20} alt=""/>
             </motion.span>
             <motion.h1 initial={{ opacity: 0, y: '-20px' }} animate={{ opacity: 1, y: '0px' }} transition={{ delay: 0.4, duration: 0.3 }} className="font-black text-[31px] max-w-[500px] md:max-w-none">
-                Design & Business Oriented Fullstack Developer.
+                Experience & Business Oriented Frontend Developer.
             </motion.h1>
             <div className="w-[100px] h-[1px] bg-gray-dark"></div>
             <motion.p initial={{ opacity: 0, y: '-20px' }} animate={{ opacity: 1, y: '0px' }} transition={{ delay: 0.6, duration: 0.3 }} className="max-w-[450px] text-[14px] md:max-w-none">
